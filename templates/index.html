@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="forward()">Forward</button>
+    <button onclick="backward()">Backward</button>
+    <button onclick="speedup()">speedup</button>
+    <button onclick="speeddown()">speeddown</button>
+    <script>
+        function forward(){
+            fetch('http://192.168.43.114:5000/control?func=forward')
+        }
+        function backward(){
+            fetch('http://192.168.43.114:5000/control?func=backward')
+        }
+        function speedup(){
+            fetch('http://192.168.43.114:5000/control?func=speedup')
+        }
+        function speeddown(){
+            fetch('http://192.168.43.114:5000/control?func=speeddown')
+        }
+    </script>
+    <style>
+        button{
+            height: 24vh;
+            width:100vw;
+        }
+        *{
+            font-size: larger;
+        }
+    </style>
+</body>
+</html>
