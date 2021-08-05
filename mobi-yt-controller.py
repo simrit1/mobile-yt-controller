@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 from webapp.control_func import forward, backward, speedup, speeddown
+import qrcode, socket
 
 app = Flask(__name__)
 
@@ -23,5 +24,5 @@ def control():
         pass
     return ''
 
-
-app.run('0.0.0.0')
+qrcode.make('http://'+socket.gethostbyname(socket.gethostname())+':5005').show()
+app.run('0.0.0.0', host=5005)
