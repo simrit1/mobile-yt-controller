@@ -11,4 +11,4 @@ pip install flask
 pip install pyautogui
 python mobile-yt-controller.py
 ``` 
-Now scan the qrcode with a smartphone connected to the same network (simply put, with the same router or hotspot). Open the web page, use the buttons and if you liked it. Drop a star. 
+Now scan the qrcode with a smartphone connected to the same network (simply put, with the same router or hotspot). Open the web page on phone and youtube on your pc(make sure youtube is the active window), use the buttons and if you liked it. Drop a star. 
