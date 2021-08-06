@@ -13,16 +13,16 @@
     <button onclick="speeddown()">speeddown</button>
     <script>
         function forward(){
-            fetch('http://192.168.43.114:5000/control?func=forward')
+            fetch('/control?func=forward')
         }
         function backward(){
-            fetch('http://192.168.43.114:5000/control?func=backward')
+            fetch('/control?func=backward')
         }
         function speedup(){
-            fetch('http://192.168.43.114:5000/control?func=speedup')
+            fetch('/control?func=speedup')
         }
         function speeddown(){
-            fetch('http://192.168.43.114:5000/control?func=speeddown')
+            fetch('/control?func=speeddown')
         }
     </script>
     <style>
