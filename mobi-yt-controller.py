@@ -25,4 +25,4 @@ def control():
     return ''
 
 qrcode.make('http://'+socket.gethostbyname(socket.gethostname())+':5005').show()
-app.run('0.0.0.0', host=5005)
+app.run('0.0.0.0', port=5005)
